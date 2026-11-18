@@ -1,0 +1,10 @@
+meta {
+  name: Get Customer
+  type: http
+  seq: 3
+}
+get {
+  url: {{baseUrl}}/api/customers/{{customerId}}
+  body: none
+  auth: inherit
+}

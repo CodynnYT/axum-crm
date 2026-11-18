@@ -1,0 +1,10 @@
+meta {
+  name: Delete Lead
+  type: http
+  seq: 6
+}
+delete {
+  url: {{baseUrl}}/api/leads/{{leadId}}
+  body: none
+  auth: inherit
+}

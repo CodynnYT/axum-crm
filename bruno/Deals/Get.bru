@@ -1,0 +1,10 @@
+meta {
+  name: Get Deal
+  type: http
+  seq: 3
+}
+get {
+  url: {{baseUrl}}/api/deals/{{dealId}}
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Create Lead
+  type: http
+  seq: 2
+}
+post {
+  url: {{baseUrl}}/api/leads
+  body: json
+  auth: inherit
+}
+body:json {
+  {
+    "name": "Alex Morgan",
+    "company": "Acme",
+    "email": "alex@example.com",
+    "phone": "+1-555-0101",
+    "source": "Website",
+    "stage": "New",
+    "status": "Active"
+  }
+}

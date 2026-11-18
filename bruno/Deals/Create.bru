@@ -1,0 +1,19 @@
+meta {
+  name: Create Deal
+  type: http
+  seq: 2
+}
+post {
+  url: {{baseUrl}}/api/deals
+  body: json
+  auth: inherit
+}
+body:json {
+  {
+    "name": "Acme annual contract",
+    "customer_id": {{customerId}},
+    "amount": 12500.00,
+    "stage": "Proposal",
+    "expected_close": "2027-12-31"
+  }
+}

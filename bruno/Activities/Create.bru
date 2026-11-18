@@ -1,0 +1,20 @@
+meta {
+  name: Create Activity
+  type: http
+  seq: 2
+}
+post {
+  url: {{baseUrl}}/api/activities
+  body: json
+  auth: inherit
+}
+body:json {
+  {
+    "title": "Call Acme",
+    "related_to": "Acme",
+    "activity_type": "Call",
+    "due_at": "2027-12-01T10:00:00Z",
+    "status": "Pending",
+    "notes": "Discuss proposal"
+  }
+}

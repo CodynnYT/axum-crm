@@ -1,0 +1,18 @@
+meta {
+  name: Create User
+  type: http
+  seq: 2
+}
+post {
+  url: {{baseUrl}}/api/users
+  body: json
+  auth: inherit
+}
+body:json {
+  {
+    "name": "CRM Member",
+    "email": "member@example.com",
+    "password": "replace-this-password",
+    "role": "member"
+  }
+}

@@ -1,0 +1,14 @@
+meta {
+  name: List Deals
+  type: http
+  seq: 1
+}
+get {
+  url: {{baseUrl}}/api/deals
+  body: none
+  auth: inherit
+}
+params:query {
+  ~q: Acme
+  ~stage: Proposal
+}

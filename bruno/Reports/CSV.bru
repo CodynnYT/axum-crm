@@ -1,0 +1,10 @@
+meta {
+  name: Download Report CSV
+  type: http
+  seq: 4
+}
+get {
+  url: {{baseUrl}}/api/reports/{{reportId}}/csv
+  body: none
+  auth: inherit
+}

@@ -1,0 +1,10 @@
+meta {
+  name: Get Lead
+  type: http
+  seq: 3
+}
+get {
+  url: {{baseUrl}}/api/leads/{{leadId}}
+  body: none
+  auth: inherit
+}

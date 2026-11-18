@@ -1,0 +1,10 @@
+meta {
+  name: Convert Lead to Customer
+  type: http
+  seq: 5
+}
+post {
+  url: {{baseUrl}}/api/leads/{{leadId}}/convert
+  body: none
+  auth: inherit
+}

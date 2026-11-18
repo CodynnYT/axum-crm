@@ -1,0 +1,13 @@
+meta {
+  name: Update Me
+  type: http
+  seq: 3
+}
+put {
+  url: {{baseUrl}}/api/auth/me
+  body: json
+  auth: inherit
+}
+body:json {
+  { "name": "CRM Admin" }
+}

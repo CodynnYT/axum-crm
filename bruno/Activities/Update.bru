@@ -1,0 +1,20 @@
+meta {
+  name: Update Activity
+  type: http
+  seq: 4
+}
+put {
+  url: {{baseUrl}}/api/activities/{{activityId}}
+  body: json
+  auth: inherit
+}
+body:json {
+  {
+    "title": "Call Acme",
+    "related_to": "Acme",
+    "activity_type": "Call",
+    "due_at": "2027-12-02T10:00:00Z",
+    "status": "Pending",
+    "notes": "Discuss revised proposal"
+  }
+}

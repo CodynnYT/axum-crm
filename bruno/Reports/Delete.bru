@@ -1,0 +1,10 @@
+meta {
+  name: Delete Report
+  type: http
+  seq: 5
+}
+delete {
+  url: {{baseUrl}}/api/reports/{{reportId}}
+  body: none
+  auth: inherit
+}
